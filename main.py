@@ -38,6 +38,14 @@ average_age.name = "平均年龄"
 # 保存到csv文件
 average_age.to_csv("datas/average_age.csv")
 
+# save average_age to excel
+# pip install openpyxl
+average_age.to_excel("datas/average_age.xlsx")
+
+# save to json
+average_age.to_json("datas/average_age.json")
+
+
 # 显示x轴全部标签
 average_age.plot(kind="line",marker="1",title="NBA球队平均年龄")
 plt.xlabel("球队")

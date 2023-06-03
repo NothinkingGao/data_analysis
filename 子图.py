@@ -2,7 +2,9 @@
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
-
+from pylab import mpl
+mpl.rcParams['font.sans-serif'] = ['FangSong']
+mpl.rcParams['axes.unicode_minus'] = False
 
 # 建立坐标轴
 # subplots各个参数的含义
