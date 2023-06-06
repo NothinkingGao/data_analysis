@@ -28,6 +28,8 @@ age_count = df["Age"].groupby(age_cut).count()
 # radius: 半径
 # counterclock: 逆时针
 # wedgeprops: 饼图内外边界的属性
+# title: 标题
+# kind: 图形类型
 
 age_count.plot(kind="pie",title="NBA球员年龄分布",autopct="%1.2f%%",explode=[0.1,0,0,0,0,0],radius=1.2)
 plt.show()

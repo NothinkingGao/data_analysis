@@ -6,6 +6,7 @@ mpl.rcParams['font.sans-serif'] = ['FangSong']
 mpl.rcParams['axes.unicode_minus'] = False
 
 print(f"the matplotlib path is {matplotlib.Path()}")
+
 # 打开csv文件,并读取数据
 nba_player_data = "datas/nba.csv"
 df = pd.read_csv(nba_player_data)
@@ -27,15 +28,34 @@ average_age["Atlanta Hawks"] = 30.5
 # 第二列数据保留两位小数
 average_age = average_age.round(2)
 # 正向排序
+# ascending=True代表正向排序,默认为True
+# ascending=False代表反向排序
 average_age = average_age.sort_values(ascending=True)
+average_age.name = "平均年龄"
 print(average_age)
 
+a = "赵谕" \
+    ""
+print(f'{a}')
+print(f"Utah Jazz的平均年龄为{average_age['Utah Jazz']}岁")
+
+'''this is a commit line'''
+
+b = '''
+    1. 读取csv文件
+    2. ....
+    3.ddd ...
+'''
 # 修改average_age的索引
 average_age.index = ["老鹰", "凯尔特人", "黄蜂", "公牛", "骑士", "小牛", "掘金", "活塞", "勇士", "火箭", "步行者", "快船", "湖人", "灰熊", "热火", "雄鹿", "森林狼", "篮网", "鹈鹕", "尼克斯", "雷霆", "魔术", "76人", "太阳", "开拓者", "国王", "马刺", "猛龙", "爵士", "奇才"]
 
-fg,ax = plt.subplots()
-ax.plot(average_age,kind="line")
-plt.show()
+average_age.to_csv("datas/average_age.csv")
+
+average_age.to_excel("datas/average_age.xlsx")
+
+# fg,ax = plt.subplots()
+# ax.plot(average_age,kind="line")
+# plt.show()
 # 设置列名
 # average_age.name = "平均年龄"
 # # 保存到csv文件

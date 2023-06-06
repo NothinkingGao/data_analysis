@@ -9,12 +9,12 @@ df = pd.DataFrame({'编号':['mr001','mr002','mr003'],
 print(df)
 
 # case1,语文和数学成绩加起来,并且显示在一列
-df['语文数学总分'] = df['语文'] + df['数学']
-print(df)
-
-# case2,语文成绩*2,并且显示在一列
-df['语文'] = df['语文'] * 2
-print(df)
+# df['语文数学总分'] = df['语文'] + df['数学']
+# print(df)
+#
+# # case2,语文成绩*2,并且显示在一列
+# df['语文'] = df['语文'] * 2
+# print(df)
 
 # case3,添加一列,但是不赋值,默认为NaN
 # df['体育'] = None

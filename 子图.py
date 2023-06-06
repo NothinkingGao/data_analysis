@@ -24,7 +24,10 @@ fig, ax1 = plt.subplots(1,2,figsize=(10,5))
 datas = pd.Series([1,2,3,4,5,6,7,8,9,10])
 datas.plot(kind="bar",ax=ax1[0],title="柱状图")
 
+
 # 第二个图中绘制饼图
 datas.plot(kind="pie",ax=ax1[1],title="饼图",autopct="%1.2f%%",explode=[0.1,0,0,0,0,0,0,0,0,0],radius=1.2)
+plt.savefig("datas/组合图.png")
 plt.show()
+
 

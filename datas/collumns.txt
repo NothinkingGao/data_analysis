@@ -1,0 +1,31 @@
+Total Assets
+Total Debt
+Total Equity
+Current Ratio (x)
+Quick Ratio (x)
+Total Debt/Equity (%)
+Total Debt / Total Capital (%)
+Total Debt / EBITDA (x)
+
+Total Revenue
+Gross Profit
+Net Income
+EBITDA
+
+Accounts Receivable Turnover (x)
+Inventory Turnover (x)
+Fixed Asset Turnover (x)
+
+Cash from Investing
+Cash from Financing
+Net Change in Cash
+
+Return on Assets
+Return on Capital
+Return on Equity
+Return on Common Equity
+Gross Profit Margin
+Net Income Margin
+Earnings from Cont Ops Margin
+EBITDA Margin
+EBIT Margin
